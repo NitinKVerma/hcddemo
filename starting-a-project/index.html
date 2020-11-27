@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from opensource.guide/starting-a-project/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2020 12:27:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.uhc.com/etc/designs/uhcdotcom/resources/favicon.ico"/>
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.uhc.com/etc/designs/uhcdotcom/resources/favicon.ico"/>
+  <link href="../assets/css/index.css" rel="stylesheet">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Starting an UHC open guides Project | UHC open guides Guides</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Starting an UHC open guides Project" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Learn more about the world of UHC open guides and get ready to launch your own project." />
+<meta property="og:description" content="Learn more about the world of UHC open guides and get ready to launch your own project." />
+<link rel="canonical" href="index.html" />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="UHC open guides Guides" />
+<meta property="og:image" content="../assets/images/cards/beginner.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="../assets/images/cards/beginner.png" />
+<meta property="twitter:title" content="Starting an UHC open guides Project" />
+<meta name="twitter:site" content="@github" />
+<meta property="article:publisher" content="https://www.facebook.com/GitHub/" />
+<script type="application/ld+json">
+{"image":"https://opensource.guide/assets/images/cards/beginner.png","@type":"WebPage","headline":"Starting an UHC open guides Project","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://opensource.guide/assets/images/cards/default.png"}},"description":"Learn more about the world of UHC open guides and get ready to launch your own project.","url":"https://opensource.guide/starting-a-project/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+
+
+
+
+
+      <link rel="alternate" hreflang="de" href="../de/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="en" href="index.html" />
+      <link rel="alternate" hreflang="x-default" href="index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="es" href="../es/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="fr" href="../fr/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="hu" href="../hu/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="id" href="../id/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ja" href="../ja/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ko" href="../ko/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ms" href="../ms/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="nl" href="../nl/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="pl" href="../pl/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="pt" href="../pt/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ro" href="../ro/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ta" href="../ta/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="tr" href="../tr/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="zh-hans" href="../zh-hans/starting-a-project/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="zh-hant" href="../zh-hant/starting-a-project/index.html" />
+      <style>
+
+      .main-nav{box-shadow: 0 2px 4px rgba(51,51,51,0.1);}
+      .main-nav a{ text-decoration: none; background-color: none;}
+      .main-nav a:hover{ background: none; text-decoration: underline; color: #002677;}
+      .endfoot{display: block;
+      font-family: 'UHCSans', Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.4rem;
+      color: #333;
+      background-color: #002677!important;
+      /**margin-top: 56px!important;**/
+      padding-bottom: 30px!important;
+      padding-top: 30px!important;
+          text-align: left;}
+      .ds-l-container{ont-family: 'UHCSans', Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.4rem;
+      color: #333;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1040px;
+      }
+      .ds-u-padding-y--6 {
+          padding-bottom: 30px!important;
+          padding-top: 30px!important;}
+          .ds-u-margin-top--7 {
+          /**margin-top: 56px!important;**/}
+          .ds-u-fill--white {
+          background-color: #002677!important;}
+          .ds-base, .ds-base--inverse {
+          font-family: 'UHCSans', Helvetica, sans-serif;
+          font-size: 16px;
+          line-height: 1.4rem;}
+          .ds-l-row {
+          margin-left: -16px;
+          margin-right: -16px;
+            display: flex;    margin-top: 20px;}
+            p{    padding-top: 12px; color: #333;}
+
+            ds-l-col, .ds-l-col--1, .ds-l-col--10, .ds-l-col--11, .ds-l-col--12, .ds-l-col--2, .ds-l-col--3, .ds-l-col--4, .ds-l-col--5, .ds-l-col--6, .ds-l-col--7, .ds-l-col--8, .ds-l-col--9, .ds-l-col--auto, .ds-l-lg-col, .ds-l-lg-col--1, .ds-l-lg-col--10, .ds-l-lg-col--11, .ds-l-lg-col--12, .ds-l-lg-col--2, .ds-l-lg-col--3, .ds-l-lg-col--4, .ds-l-lg-col--5, .ds-l-lg-col--6, .ds-l-lg-col--7, .ds-l-lg-col--8, .ds-l-lg-col--9, .ds-l-lg-col--auto, .ds-l-md-col, .ds-l-md-col--1, .ds-l-md-col--10, .ds-l-md-col--11, .ds-l-md-col--12, .ds-l-md-col--2, .ds-l-md-col--3, .ds-l-md-col--4, .ds-l-md-col--5, .ds-l-md-col--6, .ds-l-md-col--7, .ds-l-md-col--8, .ds-l-md-col--9, .ds-l-md-col--auto, .ds-l-sm-col, .ds-l-sm-col--1, .ds-l-sm-col--10, .ds-l-sm-col--11, .ds-l-sm-col--12, .ds-l-sm-col--2, .ds-l-sm-col--3, .ds-l-sm-col--4, .ds-l-sm-col--5, .ds-l-sm-col--6, .ds-l-sm-col--7, .ds-l-sm-col--8, .ds-l-sm-col--9, .ds-l-sm-col--auto, .ds-l-xl-col, .ds-l-xl-col--1, .ds-l-xl-col--10, .ds-l-xl-col--11, .ds-l-xl-col--12, .ds-l-xl-col--2, .ds-l-xl-col--3, .ds-l-xl-col--4, .ds-l-xl-col--5, .ds-l-xl-col--6, .ds-l-xl-col--7, .ds-l-xl-col--8, .ds-l-xl-col--9, .ds-l-xl-col--auto {
+                box-sizing: border-box;
+                min-height: 1px;
+                min-width: 0;
+                padding-left: 16px;
+                padding-right: 16px;
+                width: 100%;}
+                .ds-u-font-size--small {
+          font-size: 14px!important;}
+          .ds-u-margin-right--2 {
+          margin-right: 23px!important;}
+          .ds-h1:first-child, .ds-h2:first-child, .ds-h3:first-child, .ds-h4:first-child, .ds-h5:first-child, .ds-h6:first-child {
+          margin-top: 0;
+          color: #fff;
+        padding-bottom: 25px;}
+          .ds-h4 {
+          font-size: 18px;}
+          ul li{list-style: none; line-height: 2rem; font-weight:bold;}
+          .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+          }
+
+      </style>
+
+
+
+
+</head>
+
+  <body>
+    <main>
+      <div id="content">
+
+
+
+
+
+
+        <nav class="main-nav">
+
+          <div class="container-lg mx-auto clearfix">
+            <div style="position:absolute; top:18px;"><a href="../index.html"><img alt="UnitedHealthcare" src="https://www.uhc.com/content/dam/uhcdotcom/website-assets/logo-blue.svg" style="height: 55px;margin-left:10px;"></a></div>
+              <div class="float-sm-right">
+                <ul class="main-links d-flex flex-wrap flex-items-stretch flex-justify-center border-bottom border-sm-0 list-style-none">
+                  <li class="d-inline-block">
+                    <a class="d-block p-4" href="#">
+                    Inner Source Guides
+                    </a>
+                  </li>
+                  <li class="d-inline-block">
+                    <a class="d-block p-4" href="#">
+                      About
+                    </a>
+                  </li>
+
+                  <li class="d-inline-block">
+                    <a class="d-block p-4" href="#">
+                      Contribute
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+        </nav>
+
+
+
+
+<header class="article-header beginners bg-gray-light">
+  <div class="container-lg p-responsive clearfix mx-auto">
+
+    <h1 class="h0-mktg lh-condensed text-center mb-3">Starting an UHC open guides Project</h1>
+    <p class="lead text-center text-gray col-md-8 mx-auto mb-4 position-relative">Learn more about the world of UHC open guides and get ready to launch your own project.</p>
+
+    <nav class="toc mb-4 mb-md-6">
+      <div class="Box col-sm-8 col-md-4 col-lg-3 mx-auto">
+        <a class="toc-trigger d-block text-center p-3">
+          <span class="text-black">Table of Contents</span><svg height="18" class="octicon octicon-triangle-down ml-2 fill-blue v-align-middle icon-flip" viewbox="0 0 12 16" version="1.1" width="13" role="img"><path fill-rule="evenodd" d="M0 5l6 6 6-6z"></path></svg>
+        </a>
+        <ol class="toc-list list-style-none">
+
+          <li class="border-top">
+            <a href="#the-what-and-why-of-open-source" class="d-block py-3 px-3">The what and why of UHC open guides</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#should-i-launch-my-own-open-source-project" class="d-block py-3 px-3">Should I launch my own UHC open guides project?</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#launching-your-own-open-source-project" class="d-block py-3 px-3">Launching your own UHC open guides project</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#naming-and-branding-your-project" class="d-block py-3 px-3">Naming and branding your project</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#your-pre-launch-checklist" class="d-block py-3 px-3">Your pre-launch checklist</a>
+          </li>
+
+        </ol>
+      </div>
+    </nav>
+
+    <div class="col-sm-10 mx-auto lh-none cover-img">
+      <img src="../assets/images/illos/beginners.svg" alt="Starting an UHC open guides Project" class="center">
+    </div>
+  </div>
+</header>
+
+<article class="pb-md-6">
+  <div class="article-body mx-auto px-3 pt-4 pt-lg-6 pb-6 col-md-10 col-lg-8 col-xl-6">
+    <h2 id="the-what-and-why-of-open-source">The “what” and “why” of UHC open guides</h2>
+
+<p>So you’re thinking about getting started with UHC open guides? Congratulations! The world appreciates your contribution. Let’s talk about what UHC open guides is and why people do it.</p>
+
+<h3 id="what-does-open-source-mean">What does “UHC open guides” mean?</h3>
+
+<p>When a project is UHC open guides, that means <strong>anybody is free to use, study, modify, and distribute your project for any purpose.</strong> These permissions are enforced through <a href="https://opensource.org/licenses">an UHC open guides license</a>.</p>
+
+<p>UHC open guides is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. Also because it gives users a potential to control their own computing, relative to closed source. For example, a business using UHC open guides software has the option to hire someone to make custom improvements to the software, rather than relying exclusively on a closed source vendor’s product decisions.</p>
+
+<p><em>Free software</em> refers to the same set of projects as <em>UHC open guides</em>. Sometimes you’ll also see <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">these terms</a> combined as “free and UHC open guides software” (FOSS) or “free, libre, and UHC open guides software” (FLOSS). <em>Free</em> and <em>libre</em> refer to freedom, <a href="#does-open-source-mean-free-of-charge">not price</a>.</p>
+
+<h3 id="why-do-people-open-source-their-work">Why do people UHC open guides their work?</h3>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/kentcdodds?s=180" class="pquote-avatar" alt="avatar">
+  One of the most rewarding experiences I get out of using and collaborating on UHC open guides comes from the relationships that I build with other developers facing many of the same problems I am.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/kentcdodds" class="user-mention">@kentcdodds</a>, <a href="https://kentcdodds.com/blog/how-getting-into-open-source-has-been-awesome-for-me">“How getting into UHC open guides has been awesome for me”</a>
+  </p>
+</aside>
+
+<p><a href="https://ben.balter.com/2015/11/23/why-open-source/">There are many reasons</a> why a person or organization would want to UHC open guides a project. Some examples include:</p>
+
+<ul>
+  <li>
+    <p><strong>Collaboration:</strong> UHC open guides projects can accept changes from anybody in the world. <a href="https://github.com/exercism/">Exercism</a>, for example, is a programming exercise platform with over 350 contributors.</p>
+  </li>
+  <li>
+    <p><strong>Adoption and remixing:</strong> UHC open guides projects can be used by anyone for nearly any purpose. People can even use it to build other things. <a href="https://github.com/WordPress">WordPress</a>, for example, started as a fork of an existing project called <a href="https://github.com/WordPress/book/blob/HEAD/Content/Part 1/2-b2-cafelog.md">b2</a>.</p>
+  </li>
+  <li>
+    <p><strong>Transparency:</strong> Anyone can inspect an UHC open guides project for errors or inconsistencies. Transparency matters to governments like <a href="https://medium.com/@bozhobg/bulgaria-got-a-law-requiring-open-source-98bf626cf70a">Bulgaria</a> or the <a href="https://sourcecode.cio.gov/">United States</a>, regulated industries like banking or healthcare, and security software like <a href="https://github.com/letsencrypt">Let’s Encrypt</a>.</p>
+  </li>
+</ul>
+
+<p>UHC open guides isn’t just for software, either. You can UHC open guides everything from data sets to books. Check out <a href="https://github.com/explore">GitHub Explore</a> for ideas on what else you can UHC open guides.</p>
+
+<h3 id="does-open-source-mean-free-of-charge">Does UHC open guides mean “free of charge”?</h3>
+
+<p>One of UHC open guides’s biggest draws is that it does not cost money. “Free of charge”, however, is a byproduct of UHC open guides’s overall value.</p>
+
+<p>Because <a href="https://opensource.org/osd-annotated">an UHC open guides license requires</a> that anyone can use, modify, and share your project for nearly any purpose, projects themselves tend to be free of charge. If the project cost money to use, anyone could legally make a copy and use the free version instead.</p>
+
+<p>As a result, most UHC open guides projects are free, but “free of charge” is not part of the UHC open guides definition. There are ways to charge for UHC open guides projects indirectly through dual licensing or limited features, while still complying with the official definition of UHC open guides.</p>
+
+<h2 id="should-i-launch-my-own-open-source-project">Should I launch my own UHC open guides project?</h2>
+
+<p>The short answer is yes, because no matter the outcome, launching your own project is a great way to learn how UHC open guides works.</p>
+
+<p>If you’ve never UHC open guidesd a project before, you might be nervous about what people will say, or whether anyone will notice at all. If this sounds like you, you’re not alone!</p>
+
+<p>UHC open guides work is like any other creative activity, whether it’s writing or painting. It can feel scary to share your work with the world, but the only way to get better is to practice - even if you don’t have an audience.</p>
+
+<p>If you’re not yet convinced, take a moment to think about what your goals might be.</p>
+
+<h3 id="setting-your-goals">Setting your goals</h3>
+
+<p>Goals can help you figure out what to work on, what to say no to, and where you need help from others. Start by asking yourself,  <em>why am I open sourcing this project?</em></p>
+
+<p>There is no one right answer to this question. You may have multiple goals for a single project, or different projects with different goals.</p>
+
+<p>If your only goal is to show off your work, you may not even want contributions, and even say so in your README. On the other hand, if you do want contributors, you’ll invest time into clear documentation and making newcomers feel welcome.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/mavris?s=180" class="pquote-avatar" alt="avatar">
+  At some point I created a custom UIAlertView that I was using…and I decided to make it UHC open guides. So I modified it to be more dynamic and uploaded it to GitHub. I also wrote my first documentation explaining to other developers how to use it on their projects. Probably nobody ever used it because it was a simple project but I was feeling good about my contribution.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/mavris" class="user-mention">@mavris</a>, <a href="https://medium.com/rocknnull/self-taught-software-engineers-why-open-source-is-important-to-us-fe2a3473a576">“Self-taught Software Developers: Why UHC open guides is important to us”</a>
+  </p>
+</aside>
+
+<p>As your project grows, your community may need more than just code from you. Responding to issues, reviewing code, and evangelizing your project are all important tasks in an UHC open guides project.</p>
+
+<p>While the amount of time you spend on non-coding tasks will depend on the size and scope of your project, you should be prepared as a maintainer to address them yourself or find someone to help you.</p>
+
+<p><strong>If you’re part of a company open sourcing a project,</strong> make sure your project has the internal resources it needs to thrive. You’ll want to identify who’s responsible for maintaining the project after launch, and how you’ll share those tasks with your community.</p>
+
+<p>If you need a dedicated budget or staffing for promotion, operations and maintaining the project, start those conversations early.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/captainsafia?s=180" class="pquote-avatar" alt="avatar">
+  As you begin to UHC open guides the project, it’s important to make sure that your management processes take into consideration the contributions and abilities of the community around your project. Don’t be afraid to involve contributors who are not employed in your business in key aspects of the project — especially if they are frequent contributors.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/captainsafia" class="user-mention">@captainsafia</a>, <a href="https://dev.to/captainsafia/so-you-wanna-open-source-a-project-eh-5779">“So you wanna UHC open guides a project, eh?”</a>
+  </p>
+</aside>
+
+<h3 id="contributing-to-other-projects">Contributing to other projects</h3>
+
+<p>If your goal is to learn how to collaborate with others or understand how UHC open guides works, consider contributing to an existing project. Start with a project that you already use and love. Contributing to a project can be as simple as fixing typos or updating documentation.</p>
+
+<p>If you’re not sure how to get started as a contributor, check out our <a href="../how-to-contribute/index.html">How to Contribute to UHC open guides guide</a>.</p>
+
+<h2 id="launching-your-own-open-source-project">Launching your own UHC open guides project</h2>
+
+<p>There is no perfect time to UHC open guides your work. You can UHC open guides an idea, a work in progress, or after years of being closed source.</p>
+
+<p>Generally speaking, you should UHC open guides your project when you feel comfortable having others view, and give feedback on, your work.</p>
+
+<p>No matter which stage you decide to UHC open guides your project, every project should include the following documentation:</p>
+
+<ul>
+  <li><a href="https://help.github.com/articles/open-source-licensing/#where-does-the-license-live-on-my-repository">UHC open guides license</a></li>
+  <li><a href="https://help.github.com/articles/create-a-repo/#commit-your-first-change">README</a></li>
+  <li><a href="https://help.github.com/articles/setting-guidelines-for-repository-contributors/">Contributing guidelines</a></li>
+  <li><a href="../code-of-conduct/index.html">Code of conduct</a></li>
+</ul>
+
+<p>As a maintainer, these components will help you communicate expectations, manage contributions, and protect everyone’s legal rights (including your own). They significantly increase your chances of having a positive experience.</p>
+
+<p>If your project is on GitHub, putting these files in your root directory with the recommended filenames will help GitHub recognize and automatically surface them to your readers.</p>
+
+<h3 id="choosing-a-license">Choosing a license</h3>
+
+<p>An UHC open guides license guarantees that others can use, copy, modify, and contribute back to your project without repercussions. It also protects you from sticky legal situations. <strong>You must include a license when you launch an UHC open guides project.</strong></p>
+
+<p>Legal work is no fun. The good news is that you can copy and paste an existing license into your repository. It will only take a minute to protect your hard work.</p>
+
+<p><a href="https://choosealicense.com/licenses/mit/">MIT</a>, <a href="https://choosealicense.com/licenses/apache-2.0/">Apache 2.0</a>, and <a href="https://choosealicense.com/licenses/gpl-3.0/">GPLv3</a> are the most popular UHC open guides licenses, but <a href="https://choosealicense.com/">there are other options</a> to choose from.</p>
+
+<p>When you create a new project on GitHub, you are given the option to select a license. Including an UHC open guides license will make your GitHub project UHC open guides.</p>
+
+<p><img src="../assets/images/starting-a-project/repository-license-picker.png" alt="Pick a license"></p>
+
+<p>If you have other questions or concerns around the legal aspects of managing an UHC open guides project, <a href="../legal/index.html">we’ve got you covered</a>.</p>
+
+<h3 id="writing-a-readme">Writing a README</h3>
+
+<p>READMEs do more than explain how to use your project. They also explain why your project matters, and what your users can do with it.</p>
+
+<p>In your README, try to answer the following questions:</p>
+
+<ul>
+  <li>What does this project do?</li>
+  <li>Why is this project useful?</li>
+  <li>How do I get started?</li>
+  <li>Where can I get more help, if I need it?</li>
+</ul>
+
+<p>You can use your README to answer other questions, like how you handle contributions, what the goals of the project are, and information about licenses and attribution. If you don’t want to accept contributions, or your project is not yet ready for production, write this information down.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/tracymakes?s=180" class="pquote-avatar" alt="avatar">
+  Better documentation means more users, less support requests, and more contributors. (…) Remember that your readers aren’t you. There are people who might come to a project who have completely different experiences.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/tracymakes" class="user-mention">@tracymakes</a>, <a href="https://www.youtube.com/watch?v=8LiV759Bje0&amp;list=PLmV2D6sIiX3U03qc-FPXgLFGFkccCEtfv&amp;index=10">“Writing So Your Words Are Read (video)”</a>
+  </p>
+</aside>
+
+<p>Sometimes, people avoid writing a README because they feel like the project is unfinished, or they don’t want contributions. These are all very good reasons to write one.</p>
+
+<p>For more inspiration, try using <a href="https://github.com/dguo" class="user-mention">@dguo</a>’s <a href="https://www.makeareadme.com/">“Make a README” guide</a> or <a href="https://github.com/PurpleBooth" class="user-mention">@PurpleBooth</a>’s <a href="https://gist.github.com/PurpleBooth/109311bb0361f32d87a2">README template</a> to write a complete README.</p>
+
+<p>When you include a README file in the root directory, GitHub will automatically display it on the repository homepage.</p>
+
+<h3 id="writing-your-contributing-guidelines">Writing your contributing guidelines</h3>
+
+<p>A CONTRIBUTING file tells your audience how to participate in your project. For example, you might include information on:</p>
+
+<ul>
+  <li>How to file a bug report (try using <a href="https://github.com/blog/2111-issue-and-pull-request-templates">issue and pull request templates</a>)</li>
+  <li>How to suggest a new feature</li>
+  <li>How to set up your environment and run tests</li>
+</ul>
+
+<p>In addition to technical details, a CONTRIBUTING file is an opportunity to communicate your expectations for contributions, such as:</p>
+
+<ul>
+  <li>The types of contributions you’re looking for</li>
+  <li>Your roadmap or vision for the project</li>
+  <li>How contributors should (or should not) get in touch with you</li>
+</ul>
+
+<p>Using a warm, friendly tone and offering specific suggestions for contributions (such as writing documentation, or making a website) can go a long way in making newcomers feel welcomed and excited to participate.</p>
+
+<p>For example, <a href="https://github.com/activeadmin/activeadmin/">Active Admin</a> starts <a href="https://github.com/activeadmin/activeadmin/blob/HEAD/CONTRIBUTING.md">its contributing guide</a> with:</p>
+
+<blockquote>
+  <p>First off, thank you for considering contributing to Active Admin. It’s people like you that make Active Admin such a great tool.</p>
+</blockquote>
+
+<p>In the earliest stages of your project, your CONTRIBUTING file can be simple. You should always explain how to report bugs or file issues, and any technical requirements (like tests) to make a contribution.</p>
+
+<p>Over time, you might add other frequently asked questions to your CONTRIBUTING file. Writing down this information means fewer people will ask you the same questions over and over again.</p>
+
+<p>For more help with writing your CONTRIBUTING file, check out <a href="https://github.com/nayafia" class="user-mention">@nayafia</a>’s <a href="https://github.com/nayafia/contributing-template/blob/HEAD/CONTRIBUTING-template.md">contributing guide template</a> or <a href="https://github.com/mozilla" class="user-mention">@mozilla</a>’s <a href="https://mozillascience.github.io/working-open-workshop/contributing/">“How to Build a CONTRIBUTING.md”</a>.</p>
+
+<p>Link to your CONTRIBUTING file from your README, so more people see it. If you <a href="https://help.github.com/articles/setting-guidelines-for-repository-contributors/">place the CONTRIBUTING file in your project’s repository</a>, GitHub will automatically link to your file when a contributor creates an issue or opens a pull request.</p>
+
+<p><img src="../assets/images/starting-a-project/Contributing-guidelines.jpg" alt="Contributing guidelines"></p>
+
+<h3 id="establishing-a-code-of-conduct">Establishing a code of conduct</h3>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/mlynch?s=180" class="pquote-avatar" alt="avatar">
+  We’ve all had experiences where we faced what was probably abuse either as a maintainer trying to explain why something had to be a certain way, or as a user…asking a simple question. (…) A code of conduct becomes an easily referenced and linkable document that indicates that your team takes constructive discourse very seriously.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/mlynch" class="user-mention">@mlynch</a>, <a href="https://medium.com/ionic-and-the-mobile-web/making-open-source-a-happier-place-3b90d254f5f">“Making UHC open guides a Happier Place”</a>
+  </p>
+</aside>
+
+<p>Finally, a code of conduct helps set ground rules for behavior for your project’s participants. This is especially valuable if you’re launching an UHC open guides project for a community or company. A code of conduct empowers you to facilitate healthy, constructive community behavior, which will reduce your stress as a maintainer.</p>
+
+<p>For more information, check out our <a href="../code-of-conduct/index.html">Code of Conduct guide</a>.</p>
+
+<p>In addition to communicating <em>how</em> you expect participants to behave, a code of conduct also tends to describe who these expectations apply to, when they apply, and what to do if a violation occurs.</p>
+
+<p>Much like UHC open guides licenses, there are also emerging standards for codes of conduct, so you don’t have to write your own. The <a href="https://contributor-covenant.org/">Contributor Covenant</a> is a drop-in code of conduct that is used by <a href="https://www.contributor-covenant.org/adopters">over 40,000 UHC open guides projects</a>, including Kubernetes, Rails, and Swift. No matter which text you use, you should be prepared to enforce your code of conduct when necessary.</p>
+
+<p>Paste the text directly into a CODE_OF_CONDUCT file in your repository. Keep the file in your project’s root directory so it’s easy to find, and link to it from your README.</p>
+
+<h2 id="naming-and-branding-your-project">Naming and branding your project</h2>
+
+<p>Branding is more than a flashy logo or catchy project name. It’s about how you talk about your project, and who you reach with your message.</p>
+
+<h3 id="choosing-the-right-name">Choosing the right name</h3>
+
+<p>Pick a name that is easy to remember and, ideally, gives some idea of what the project does. For example:</p>
+
+<ul>
+  <li>
+<a href="https://github.com/getsentry/sentry">Sentry</a> monitors apps for crash reporting</li>
+  <li>
+<a href="https://github.com/macournoyer/thin">Thin</a> is a fast and simple Ruby web server</li>
+</ul>
+
+<p>If you’re building upon an existing project, using their name as a prefix can help clarify what your project does (for example, <a href="https://github.com/bitinn/node-fetch">node-fetch</a> brings <code class="language-plaintext highlighter-rouge">window.fetch</code> to Node.js).</p>
+
+<p>Consider clarity above all. Puns are fun, but remember that some jokes might not translate to other cultures or people with different experiences from you. Some of your potential users might be company employees: you don’t want to make them uncomfortable when they have to explain your project at work!</p>
+
+<h3 id="avoiding-name-conflicts">Avoiding name conflicts</h3>
+
+<p><a href="http://ivantomic.com/projects/ospnc/">Check for UHC open guides projects with a similar name</a>, especially if you share the same language or ecosystem. If your name overlaps with a popular existing project, you might confuse your audience.</p>
+
+<p>If you want a website, Twitter handle, or other properties to represent your project, make sure you can get the names you want. Ideally, <a href="https://instantdomainsearch.com/">reserve those names now</a> for peace of mind, even if you don’t intend to use them just yet.</p>
+
+<p>Make sure that your project’s name doesn’t infringe upon any trademarks. A company might ask you to take down your project later on, or even take legal action against you. It’s just not worth the risk.</p>
+
+<p>You can check the <a href="http://www.wipo.int/branddb/en/">WIPO Global Brand Database</a> for trademark conflicts. If you’re at a company, this is one of the things your <a href="../legal/index.html">legal team can help you with</a>.</p>
+
+<p>Finally, do a quick Google search for your project name. Will people be able to easily find your project? Does something else appear in the search results that you wouldn’t want them to see?</p>
+
+<h3 id="how-you-write-and-code-affects-your-brand-too">How you write (and code) affects your brand, too!</h3>
+
+<p>Throughout the life of your project, you’ll do a lot of writing: READMEs, tutorials, community documents, responding to issues, maybe even newsletters and mailing lists.</p>
+
+<p>Whether it’s official documentation or a casual email, your writing style is part of your project’s brand. Consider how you might come across to your audience and whether that is the tone you wish to convey.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/janl?s=180" class="pquote-avatar" alt="avatar">
+  I tried to be involved with every thread on the mailing list, and showing exemplary behaviour, being nice to people, taking their issues seriously and trying to be helpful overall. After a while, people stuck around not to only ask questions, but to help with the answering as well, and to my complete delight, they mimicked my style.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/janl" class="user-mention">@janl</a> on <a href="https://github.com/apache/couchdb">CouchDB</a>, <a href="https://writing.jan.io/2015/11/20/sustainable-open-source.html">“Sustainable UHC open guides”</a>
+  </p>
+</aside>
+
+<p>Using warm, inclusive language (such as “them”, even when referring to the single person) can go a long way in making your project feel welcoming to new contributors. Stick to simple language, as many of your readers may not be native English speakers.</p>
+
+<p>Beyond how you write words, your coding style may also become part of your project’s brand. <a href="https://angular.io/guide/styleguide">Angular</a> and <a href="https://contribute.jquery.org/style-guide/js/">jQuery</a> are two examples of projects with rigorous coding styles and guidelines.</p>
+
+<p>It isn’t necessary to write a style guide for your project when you’re just starting out, and you may find that you enjoy incorporating different coding styles into your project anyway. But you should anticipate how your writing and coding style might attract or discourage different types of people. The earliest stages of your project are your opportunity to set the precedent you wish to see.</p>
+
+<h2 id="your-pre-launch-checklist">Your pre-launch checklist</h2>
+
+<p>Ready to UHC open guides your project? Here’s a checklist to help. Check all the boxes? You’re ready to go! <a href="https://help.github.com/articles/making-a-private-repository-public/">Click “publish”</a> and pat yourself on the back.</p>
+
+<p><strong>Documentation</strong></p>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox1" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox1" class="overflow-hidden d-block text-normal">
+    Project has a LICENSE file with an UHC open guides license
+  </label>
+</div>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox2" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox2" class="overflow-hidden d-block text-normal">
+    Project has basic documentation (README, CONTRIBUTING, CODE_OF_CONDUCT)
+  </label>
+</div>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox3" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox3" class="overflow-hidden d-block text-normal">
+    The name is easy to remember, gives some idea of what the project does, and does not conflict with an existing project or infringe on trademarks
+  </label>
+</div>
+
+<div class="clearfix mb-4">
+  <input type="checkbox" id="cbox4" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox4" class="overflow-hidden d-block text-normal">
+    The issue queue is up-to-date, with issues clearly organized and labeled
+  </label>
+</div>
+
+<p><strong>Code</strong></p>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox5" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox5" class="overflow-hidden d-block text-normal">
+    Project uses consistent code conventions and clear function/method/variable names
+  </label>
+</div>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox6" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox6" class="overflow-hidden d-block text-normal">
+    The code is clearly commented, documenting intentions and edge cases
+  </label>
+</div>
+
+<div class="clearfix mb-4">
+  <input type="checkbox" id="cbox7" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox7" class="overflow-hidden d-block text-normal">
+    There are no sensitive materials in the revision history, issues, or pull requests (for example, passwords or other non-public information)
+  </label>
+</div>
+
+<p><strong>People</strong></p>
+
+<p>If you’re an individual:</p>
+
+<div class="clearfix mb-4">
+  <input type="checkbox" id="cbox8" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox8" class="overflow-hidden d-block text-normal">
+  You've talked to the legal department and/or understand the IP and UHC open guides policies of your company (if you're an employee somewhere)
+  </label>
+</div>
+
+<p>If you’re a company or organization:</p>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox9" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox9" class="overflow-hidden d-block text-normal">
+    You've talked to your legal department
+  </label>
+</div>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox10" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox10" class="overflow-hidden d-block text-normal">
+    You have a marketing plan for announcing and promoting the project
+  </label>
+</div>
+
+<div class="clearfix mb-2">
+  <input type="checkbox" id="cbox11" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox11" class="overflow-hidden d-block text-normal">
+    Someone is committed to managing community interactions (responding to issues, reviewing and merging pull requests)
+  </label>
+</div>
+
+<div class="clearfix mb-4">
+  <input type="checkbox" id="cbox12" class="d-block float-left mt-1 mr-2" value="checkbox">
+  <label for="cbox12" class="overflow-hidden d-block text-normal">
+    At least two people have administrative access to the project
+  </label>
+</div>
+
+<h2 id="you-did-it">You did it!</h2>
+
+<p>Congratulations on open sourcing your first project. No matter the outcome, working in public is a gift to the community. With every commit, comment, and pull request, you’re creating opportunities for yourself and for others to learn and grow.</p>
+
+  </div>
+  <div class="text-center pb-4">
+    <a href="../index.html" style="font-size:18px;">
+      Back to all guides
+    </a>
+  </div>
+</article>
+
+
+<div class="container-lg p-responsive mx-auto border-top text-center pt-5">
+  <h2>Related Guides</h2>
+  <div class="gutter-sm d-flex flex-wrap flex-items-stretch pb-md-6">
+
+
+    <div class="col-12 col-sm-9 mx-auto col-md-6 mt-4 mt-lg-5">
+      <a href="../finding-users/index.html" class="guide-cover finding Box height-full d-block">
+
+        <div class="lh-none guide-cover-img text-center pt-4">
+          <img src="../assets/images/illos/finding.svg" class="" alt="Finding Users for Your Project illustration">
+        </div>
+
+        <div class="flex-self-end p-4 text-center p-lg-5">
+          <h3 class="h3-mktg text-bold lh-condensed mb-2 text-black">
+            Finding Users for Your Project
+          </h3>
+          <div class="mb-0 text-gray">
+            <p>Help your UHC open guides project grow by getting it in the hands of happy users.</p>
+
+          </div>
+        </div>
+
+      </a>
+    </div>
+
+
+    <div class="col-12 col-sm-9 mx-auto col-md-6 mt-4 mt-lg-5">
+      <a href="../building-community/index.html" class="guide-cover building Box height-full d-block">
+
+        <div class="lh-none guide-cover-img text-center pt-4">
+          <img src="../assets/images/illos/building.svg" class="" alt="Building Welcoming Communities illustration">
+        </div>
+
+        <div class="flex-self-end p-4 text-center p-lg-5">
+          <h3 class="h3-mktg text-bold lh-condensed mb-2 text-black">
+            Building Welcoming Communities
+          </h3>
+          <div class="mb-0 text-gray">
+            <p>Building a community that encourages people to use, contribute to, and evangelize your project.</p>
+
+          </div>
+        </div>
+
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<footer class="bg-white border-top text-center pt-5">
+  <div class="container-lg p-responsive mx-auto">
+
+    <div class="d-flex flex-wrap flex-items-stretch">
+      <div class="col-12 col-sm-6 mb-4 col-border">
+        <div class="height-full p-5">
+          <img src="../assets/images/illos/squirrel.svg" class="little-illo mb-3" alt="squirrel illustration">
+          <p class=" mb-3" style="font-weight:600;color: #196ecf; font-size:18px;"}>Contribute</p>
+          <p class="mb-3 p-large">Want to make a suggestion? This content is UHC UHC open guides. Help us improve it.</p>
+          <p>
+            <a data-proofer-ignore href="#" class="btn btn-outline">
+              Contribute
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="height-full p-5">
+          <div id="mc_embed_signup">
+          <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+              <img src="../assets/images/illos/bird.svg" class="little-illo mb-3" alt="bird illustration">
+              <p class=" mb-3" style="font-weight:600;color: #196ecf;font-size:18px;">Stay in touch</p>
+              <p class="mb-3 p-large">Be the first to hear about GitHub's latest UHC UHC open guides tips and resources.</p>
+
+              <div class="mc-field-group col-12">
+                  <label for="mce-EMAIL" class="d-none">Email Address</label>
+                  <input type="email" placeholder="Email Address" name="EMAIL" class="form-input required email d-block col-10 mx-auto py-2 px-3 mb-3" id="mce-EMAIL" autocomplete="home email">
+                  <input type="checkbox" value="1" name="group[9617][1]" id="mce-group[9617]-9617-0" checked="checked" style="display:none">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline">
+              </div>
+              <div id="mce-responses" class="clear">
+                  <div class="" id="mce-error-response" style="display:none"></div>
+                  <div class="" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9d7ced8c4bbd6c2f238673f0f_b514344ba3" tabindex="-1" value=""></div>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--  <div class="border-top text-gray py-5">
+      <p class="float-md-right"><a class="text-gray-light text-small" href="#">fine print</a></p>
+
+      <div>
+
+
+
+
+
+
+
+
+          <svg height="20" class="octicon octicon-code v-align-middle fill-gray mr-1" aria-label="code" viewBox="0 0 14 16" version="1.1" width="17" role="img"><path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+         with
+
+          <svg height="20" class="octicon octicon-heart v-align-middle fill-gray mx-1" aria-label="love" viewBox="0 0 12 16" version="1.1" width="15" role="img"><path d="M11.2 3c-.52-.63-1.25-.95-2.2-1-.97 0-1.69.42-2.2 1-.51.58-.78.92-.8 1-.02-.08-.28-.42-.8-1-.52-.58-1.17-1-2.2-1-.95.05-1.69.38-2.2 1-.52.61-.78 1.28-.8 2 0 .52.09 1.52.67 2.67C1.25 8.82 3.01 10.61 6 13c2.98-2.39 4.77-4.17 5.34-5.33C11.91 6.51 12 5.5 12 5c-.02-.72-.28-1.39-.8-2.02V3z"></path></svg>
+         by
+          <svg height="20" class="octicon octicon-mark-github v-align-middle fill-gray mx-1" aria-label="GitHub" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+         and
+
+          <a href="#" class="text-gray">friends</a>
+
+      </div>
+    </div>-->
+  </div>
+  <!-- footer area-->
+  <div class="ds-base ds-u-fill--white ds-u-margin-top--7 ds-u-padding-y--6 endfoot" role="contentinfo">
+  <div class="ds-l-container">
+    <div class="ds-l-row" style="padding-bottom:20px;">
+      <div class="ds-u-font-size--small ds-l-col--12 ds-l-sm-col--6 ds-l-md-col--6 ds-u-margin-bottom--2">
+        <div class="ds-u-float--left ds-u-margin-right--2">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <img alt="" src="https://www.uhc.com/content/dam/uhcdotcom/website-assets/logo-white.svg" style="max-width: 104px; margin-bottom:15px;">
+          <!--<p style="color:#fff; font-weight:600;">#7th Floor of Tower A Unitech Cyber Park, Arya Samaj Rd, Sector 39, Gurugram, Haryana 122001, India.</p>-->
+        </div>
+      </div>
+      <div class="ds-l-col--12 ds-l-sm-col--6 ds-l-md-col--3 ds-u-margin-bottom--2">
+        <h6 class="ds-h4">Contact</h6>
+        <ul class="ds-c-list ds-c-list--bare ds-u-font-size--small">
+          <li><a href="#" style="color:#fff;">Report Suspicious Activity</a></li>
+          <li><a href="#" style="color:#fff;">Human Capital Help</a></li>
+          <li><a href="#" style="color:#fff;">Technology Help</a></li>
+          <li><a href="#" style="color:#fff;">CLL Central</a></li>
+          <!--<li><a href="https://www.healthcare.gov/">Healthcare.gov</a></li>
+          <li><a href="https://www.hhs.gov/">HHS.gov</a></li>-->
+        </ul>
+      </div>
+      <div class="ds-l-col--12 ds-l-sm-col--6 ds-l-md-col--3 ds-u-margin-bottom--2">
+        <h6 class="ds-h4">Additional resources</h6>
+        <ul class="ds-c-list ds-c-list--bare ds-u-font-size--small">
+          <li><a href="#" style="color:#fff;">Non discrimination</a></li>
+          <li><a href="#" style="color:#fff;">Freedom of Information Act</a></li>
+          <li><a href="#" style="color:#fff;">Inspector General</a></li>
+          <li><a href="#" style="color:#fff;">No Fear Act</a></li>
+          <li><a href="#" style="color:#fff;">Plain Writing</a></li>
+          <li><a href="#" style="color:#fff;">Health care fraud</a></li>
+        </ul>
+      </div>
+    </div><div style="padding-top:20px; color:#fff; font-size:11px; border-top:1px solid #b3babc;">
+  <span class="lg-display-inlineBlock mr-6">© 2020 United HealthCare Services, Inc.</span>
+
+
+  </div>
+  </div>
+</div>
+  <!--- End--->
+
+
+</footer>
+
+
+      </div>
+    </main>
+
+    <script src="../assets/js/index.js"></script>
+     <script type="text/javascript" src="../assets/js/mc-validate.js"></script>
+    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  </body>
+
+<!-- Mirrored from opensource.guide/starting-a-project/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2020 12:27:43 GMT -->
+</html>

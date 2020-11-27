@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from opensource.guide/leadership-and-governance/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2020 12:27:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="c1kuD-K2HIVF635lypcsWPoD4kilo5-jA_wBFyT4uMY" />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="https://www.uhc.com/etc/designs/uhcdotcom/resources/favicon.ico"/>
+<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="https://www.uhc.com/etc/designs/uhcdotcom/resources/favicon.ico"/>
+  <link href="../assets/css/index.css" rel="stylesheet">
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Leadership and Governance | Open Source Guides</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Leadership and Governance" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Growing open source projects can benefit from formal rules for making decisions." />
+<meta property="og:description" content="Growing open source projects can benefit from formal rules for making decisions." />
+<link rel="canonical" href="index.html" />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="Open Source Guides" />
+<meta property="og:image" content="../assets/images/cards/leadership.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="../assets/images/cards/leadership.png" />
+<meta property="twitter:title" content="Leadership and Governance" />
+<meta name="twitter:site" content="@github" />
+<meta property="article:publisher" content="https://www.facebook.com/GitHub/" />
+<script type="application/ld+json">
+{"image":"https://opensource.guide/assets/images/cards/leadership.png","@type":"WebPage","headline":"Leadership and Governance","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://opensource.guide/assets/images/cards/default.png"}},"description":"Growing open source projects can benefit from formal rules for making decisions.","url":"https://opensource.guide/leadership-and-governance/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+
+
+
+
+
+
+      <link rel="alternate" hreflang="de" href="../de/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="en" href="index.html" />
+      <link rel="alternate" hreflang="x-default" href="index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="es" href="../es/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="fr" href="../fr/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="hu" href="../hu/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="id" href="../id/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ja" href="../ja/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ko" href="../ko/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ms" href="../ms/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="nl" href="../nl/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="pl" href="../pl/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="pt" href="../pt/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ro" href="../ro/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="ta" href="../ta/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="tr" href="../tr/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="zh-hans" href="../zh-hans/leadership-and-governance/index.html" />
+
+
+
+
+
+
+      <link rel="alternate" hreflang="zh-hant" href="../zh-hant/leadership-and-governance/index.html" />
+
+      <style>
+
+            .main-nav{box-shadow: 0 2px 4px rgba(51,51,51,0.1);}
+            .main-nav a{ text-decoration: none; background-color: none;}
+            .main-nav a:hover{ background: none; text-decoration: underline; color: #002677;}
+            .endfoot{display: block;
+            font-family: 'UHCSans', Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.4rem;
+            color: #333;
+            background-color: #002677!important;
+            /**margin-top: 56px!important;**/
+            padding-bottom: 30px!important;
+            padding-top: 30px!important;
+                text-align: left;}
+            .ds-l-container{ont-family: 'UHCSans', Helvetica, sans-serif;
+            font-size: 16px;
+            line-height: 1.4rem;
+            color: #333;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1040px;
+            }
+            .ds-u-padding-y--6 {
+                padding-bottom: 30px!important;
+                padding-top: 30px!important;}
+                .ds-u-margin-top--7 {
+                /**margin-top: 56px!important;**/}
+                .ds-u-fill--white {
+                background-color: #002677!important;}
+                .ds-base, .ds-base--inverse {
+                font-family: 'UHCSans', Helvetica, sans-serif;
+                font-size: 16px;
+                line-height: 1.4rem;}
+                .ds-l-row {
+                margin-left: -16px;
+                margin-right: -16px;
+                  display: flex;    margin-top: 20px;}
+                  p{    padding-top: 12px; color: #333;}
+
+                  ds-l-col, .ds-l-col--1, .ds-l-col--10, .ds-l-col--11, .ds-l-col--12, .ds-l-col--2, .ds-l-col--3, .ds-l-col--4, .ds-l-col--5, .ds-l-col--6, .ds-l-col--7, .ds-l-col--8, .ds-l-col--9, .ds-l-col--auto, .ds-l-lg-col, .ds-l-lg-col--1, .ds-l-lg-col--10, .ds-l-lg-col--11, .ds-l-lg-col--12, .ds-l-lg-col--2, .ds-l-lg-col--3, .ds-l-lg-col--4, .ds-l-lg-col--5, .ds-l-lg-col--6, .ds-l-lg-col--7, .ds-l-lg-col--8, .ds-l-lg-col--9, .ds-l-lg-col--auto, .ds-l-md-col, .ds-l-md-col--1, .ds-l-md-col--10, .ds-l-md-col--11, .ds-l-md-col--12, .ds-l-md-col--2, .ds-l-md-col--3, .ds-l-md-col--4, .ds-l-md-col--5, .ds-l-md-col--6, .ds-l-md-col--7, .ds-l-md-col--8, .ds-l-md-col--9, .ds-l-md-col--auto, .ds-l-sm-col, .ds-l-sm-col--1, .ds-l-sm-col--10, .ds-l-sm-col--11, .ds-l-sm-col--12, .ds-l-sm-col--2, .ds-l-sm-col--3, .ds-l-sm-col--4, .ds-l-sm-col--5, .ds-l-sm-col--6, .ds-l-sm-col--7, .ds-l-sm-col--8, .ds-l-sm-col--9, .ds-l-sm-col--auto, .ds-l-xl-col, .ds-l-xl-col--1, .ds-l-xl-col--10, .ds-l-xl-col--11, .ds-l-xl-col--12, .ds-l-xl-col--2, .ds-l-xl-col--3, .ds-l-xl-col--4, .ds-l-xl-col--5, .ds-l-xl-col--6, .ds-l-xl-col--7, .ds-l-xl-col--8, .ds-l-xl-col--9, .ds-l-xl-col--auto {
+                      box-sizing: border-box;
+                      min-height: 1px;
+                      min-width: 0;
+                      padding-left: 16px;
+                      padding-right: 16px;
+                      width: 100%;}
+                      .ds-u-font-size--small {
+                font-size: 14px!important;}
+                .ds-u-margin-right--2 {
+                margin-right: 23px!important;}
+                .ds-h1:first-child, .ds-h2:first-child, .ds-h3:first-child, .ds-h4:first-child, .ds-h5:first-child, .ds-h6:first-child {
+                margin-top: 0;
+                color: #fff;
+              padding-bottom: 25px;}
+                .ds-h4 {
+                font-size: 18px;}
+                ul li{list-style: none; line-height: 2rem; font-weight:bold;}
+                .center {
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin-top: 75px;
+                  width: 100%;
+                }
+
+            </style>
+
+
+</head>
+
+  <body>
+    <main>
+      <div id="content">
+
+
+        <nav class="main-nav">
+
+                  <div class="container-lg mx-auto clearfix">
+                    <div style="position:absolute; top:18px;"><a href="../index.html"><img alt="UnitedHealthcare" src="https://www.uhc.com/content/dam/uhcdotcom/website-assets/logo-blue.svg" style="height: 55px;margin-left:10px;"></a></div>
+                      <div class="float-sm-right">
+                        <ul class="main-links d-flex flex-wrap flex-items-stretch flex-justify-center border-bottom border-sm-0 list-style-none">
+                          <li class="d-inline-block">
+                            <a class="d-block p-4" href="#">
+                            Inner Source Guides
+                            </a>
+                          </li> <li class="d-inline-block">
+                            <a class="d-block p-4" href="#">
+                              About
+                            </a>
+                          </li>
+
+                          <li class="d-inline-block">
+                            <a class="d-block p-4" href="#">
+                              Contribute
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                </nav>
+
+
+<header class="article-header leadership bg-gray-light">
+  <div class="container-lg p-responsive clearfix mx-auto">
+
+    <h1 class="h0-mktg lh-condensed text-center mb-3">Leadership and Governance</h1>
+    <p class="lead text-center text-gray col-md-8 mx-auto mb-4 position-relative">Growing open source projects can benefit from formal rules for making decisions.</p>
+
+    <nav class="toc mb-4 mb-md-6">
+      <div class="Box col-sm-8 col-md-4 col-lg-3 mx-auto">
+        <a class="toc-trigger d-block text-center p-3">
+          <span class="text-black">Table of Contents</span><svg height="18" class="octicon octicon-triangle-down ml-2 fill-blue v-align-middle icon-flip" viewbox="0 0 12 16" version="1.1" width="13" role="img"><path fill-rule="evenodd" d="M0 5l6 6 6-6z"></path></svg>
+        </a>
+        <ol class="toc-list list-style-none">
+
+          <li class="border-top">
+            <a href="#understanding-governance-for-your-growing-project" class="d-block py-3 px-3">Understanding governance for your growing project</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#what-are-examples-of-formal-roles-used-in-open-source-projects" class="d-block py-3 px-3">What are examples of formal roles used in open source projects?</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#how-do-i-formalize-these-leadership-roles" class="d-block py-3 px-3">How do I formalize these leadership roles?</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#when-should-i-give-someone-commit-access" class="d-block py-3 px-3">When should I give someone commit access?</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#what-are-some-of-the-common-governance-structures-for-open-source-projects" class="d-block py-3 px-3">What are some of the common governance structures for open source projects?</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#do-i-need-governance-docs-when-i-launch-my-project" class="d-block py-3 px-3">Do I need governance docs when I launch my project?</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#what-happens-if-corporate-employees-start-submitting-contributions" class="d-block py-3 px-3">What happens if corporate employees start submitting contributions?</a>
+          </li>
+
+          <li class="border-top">
+            <a href="#do-i-need-a-legal-entity-to-support-my-project" class="d-block py-3 px-3">Do I need a legal entity to support my project?</a>
+          </li>
+
+        </ol>
+      </div>
+    </nav>
+
+    <div class="col-sm-10 mx-auto lh-none cover-img">
+      <img src="../assets/images/illos/leadership.svg" alt="Leadership and Governance" class="center">
+    </div>
+  </div>
+</header>
+
+<article class="pb-md-6">
+  <div class="article-body mx-auto px-3 pt-4 pt-lg-6 pb-6 col-md-10 col-lg-8 col-xl-6">
+    <h2 id="understanding-governance-for-your-growing-project">Understanding governance for your growing project</h2>
+
+<p>Your project is growing, people are engaged, and you’re committed to keeping this thing going. At this stage, you may be wondering how to incorporate regular project contributors into your workflow, whether it’s giving someone commit access or resolving community debates. If you have questions, we’ve got answers.</p>
+
+<h2 id="what-are-examples-of-formal-roles-used-in-open-source-projects">What are examples of formal roles used in open source projects?</h2>
+
+<p>Many projects follow a similar structure for contributor roles and recognition.</p>
+
+<p>What these roles actually mean, though, is entirely up to you. Here are a few types of roles you may recognize:</p>
+
+<ul>
+  <li><strong>Maintainer</strong></li>
+  <li><strong>Contributor</strong></li>
+  <li><strong>Committer</strong></li>
+</ul>
+
+<p><strong>For some projects, “maintainers”</strong> are the only people in a project with commit access. In other projects, they’re simply the people who are listed in the README as maintainers.</p>
+
+<p>A maintainer doesn’t necessarily have to be someone who writes code for your project. It could be someone who’s done a lot of work evangelizing your project, or written documentation that made the project more accessible to others. Regardless of what they do day-to-day, a maintainer is probably someone who feels responsibility over the direction of the project and is committed to improving it.</p>
+
+<p><strong>A “contributor” could be anyone</strong> who comments on an issue or pull request, people who add value to the project (whether it’s triaging issues, writing code, or organizing events), or anybody with a merged pull request (perhaps the narrowest definition of a contributor).</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/mikeal?s=180" class="pquote-avatar" alt="avatar">
+  [For Node.js,] every person who shows up to comment on an issue or submit code is a member of a project’s community. Just being able to see them means that they have crossed the line from being a user to being a contributor.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/mikeal" class="user-mention">@mikeal</a>, <a href="https://medium.com/the-javascript-collection/healthy-open-source-967fa8be7951">“Healthy Open Source”</a>
+  </p>
+</aside>
+
+<p><strong>The term “committer”</strong> might be used to distinguish commit access, which is a specific type of responsibility, from other forms of contribution.</p>
+
+<p>While you can define your project roles any way you’d like, <a href="../how-to-contribute/index.html#what-it-means-to-contribute">consider using broader definitions</a> to encourage more forms of contribution. You can use leadership roles to formally recognize people who have made outstanding contributions to your project, regardless of their technical skill.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/jacobian?s=180" class="pquote-avatar" alt="avatar">
+  You might know me as the “inventor” of Django…but really I’m the guy who got hired to work on a thing a year after it was already made. (…) People suspect that I’m successful because of my programming skill…but I’m at best an average programmer.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/jacobian" class="user-mention">@jacobian</a>, <a href="https://www.youtube.com/watch?v=hIJdFxYlEKE#t=5m0s">“PyCon 2015 Keynote” (video)</a>
+  </p>
+</aside>
+
+<h2 id="how-do-i-formalize-these-leadership-roles">How do I formalize these leadership roles?</h2>
+
+<p>Formalizing your leadership roles helps people feel ownership and tells other community members who to look to for help.</p>
+
+<p>For a smaller project, designating leaders can be as simple as adding their names to your README or a CONTRIBUTORS text file.</p>
+
+<p>For a bigger project, if you have a website, create a team page or list your project leaders there. For example, <a href="https://github.com/postgres/postgres/">Postgres</a> has a <a href="https://www.postgresql.org/community/contributors/">comprehensive team page</a> with short profiles for each contributor.</p>
+
+<p>If your project has a very active contributor community, you might form a “core team” of maintainers, or even subcommittees of people who take ownership of different issue areas (for example, security, issue triaging, or community conduct). Let people self-organize and volunteer for the roles they’re most excited about, rather than assigning them.</p>
+
+<aside class="pquote">
+  <p>[We] supplement the core team with several “subteams”. Each subteam is focused on a specific area, e.g., language design or libraries. (…) To ensure global coordination and a strong, coherent vision for the project as a whole, each subteam is led by a member of the core team.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/rust-lang/rfcs/blob/HEAD/text/1068-rust-governance.md">“Rust Governance RFC”</a>
+  </p>
+</aside>
+
+<p>Leadership teams may want to create a designated channel (like on IRC) or meet regularly to discuss the project (like on Gitter or Google Hangout). You can even make those meetings public so other people can listen. <a href="https://github.com/cucumber/cucumber-ruby">Cucumber-ruby</a>, for example, <a href="https://github.com/cucumber/cucumber-ruby/blob/HEAD/CONTRIBUTING.md#talking-with-other-devs">hosts office hours every week</a>.</p>
+
+<p>Once you’ve established leadership roles, don’t forget to document how people can attain them! Establish a clear process for how someone can become a maintainer or join a subcommittee in your project, and write it into your GOVERNANCE.md.</p>
+
+<p>Tools like <a href="https://github.com/icecrime/vossibility-stack">Vossibility</a> can help you publicly track who is (or isn’t) making contributions to the project. Documenting this information avoids the community perception that maintainers are a clique that makes its decisions privately.</p>
+
+<p>Finally, if your project is on GitHub, consider moving your project from your personal account to an Organization and adding at least one backup admin. <a href="https://help.github.com/articles/creating-a-new-organization-account/">GitHub Organizations</a> make it easier to manage permissions and multiple repositories and protect your project’s legacy through <a href="../building-community/index.html#share-ownership-of-your-project">shared ownership</a>.</p>
+
+<h2 id="when-should-i-give-someone-commit-access">When should I give someone commit access?</h2>
+
+<p>Some people think you should give commit access to everybody who makes a contribution. Doing so could encourage more people to feel ownership of your project.</p>
+
+<p>On the other hand, especially for bigger, more complex projects, you may want to only give commit access to people who have demonstrated their commitment. There’s no one right way of doing it - do what makes you most comfortable!</p>
+
+<p>If your project is on GitHub, you can use <a href="https://help.github.com/articles/about-protected-branches/">protected branches</a> to manage who can push to a particular branch, and under which circumstances.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/felixge?s=180" class="pquote-avatar" alt="avatar">
+  Whenever somebody sends you a pull request, give them commit access to your project. While it may sound incredibly stupid at first, using this strategy will allow you to unleash the true power of GitHub. (…) Once people have commit access, they are no longer worried that their patch might go unmerged…causing them to put much more work into it.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/felixge" class="user-mention">@felixge</a>, <a href="https://felixge.de/2013/03/11/the-pull-request-hack.html">“The Pull Request Hack”</a>
+  </p>
+</aside>
+
+<h2 id="what-are-some-of-the-common-governance-structures-for-open-source-projects">What are some of the common governance structures for open source projects?</h2>
+
+<p>There are three common governance structures associated with open source projects.</p>
+
+<ul>
+  <li>
+    <p><strong>BDFL:</strong> BDFL stands for “Benevolent Dictator for Life”. Under this structure, one person (usually the initial author of the project) has final say on all major project decisions. <a href="https://github.com/python">Python</a> is a classic example. Smaller projects are probably BDFL by default, because there are only one or two maintainers. A project that originated at a company might also fall into the BDFL category.</p>
+  </li>
+  <li>
+    <p><strong>Meritocracy:</strong> <strong>(Note: the term “meritocracy” carries negative connotations for some communities and has a <a href="http://geekfeminism.wikia.com/wiki/Meritocracy">complex social and political history</a>.)</strong> Under a meritocracy, active project contributors (those who demonstrate “merit”) are given a formal decision making role. Decisions are usually made based on pure voting consensus. The meritocracy concept was pioneered by the <a href="https://www.apache.org/">Apache Foundation</a>; <a href="https://www.apache.org/index.html#projects-list">all Apache projects</a> are meritocracies. Contributions can only be made by individuals representing themselves, not by a company.</p>
+  </li>
+  <li>
+    <p><strong>Liberal contribution:</strong> Under a liberal contribution model, the people who do the most work are recognized as most influential, but this is based on current work and not historic contributions. Major project decisions are made based on a consensus seeking process (discuss major grievances) rather than pure vote, and strive to include as many community perspectives as possible. Popular examples of projects that use a liberal contribution model include <a href="https://foundation.nodejs.org/">Node.js</a> and <a href="https://www.rust-lang.org/">Rust</a>.</p>
+  </li>
+</ul>
+
+<p>Which one should you use? It’s up to you! Every model has advantages and trade-offs. And although they may seem quite different at first, all three models have more in common than they seem. If you’re interested in adopting one of these models, check out these templates:</p>
+
+<ul>
+  <li><a href="http://oss-watch.ac.uk/resources/benevolentdictatorgovernancemodel">BDFL model template</a></li>
+  <li><a href="http://oss-watch.ac.uk/resources/meritocraticgovernancemodel">Meritocracy model template</a></li>
+  <li><a href="https://medium.com/the-node-js-collection/healthy-open-source-967fa8be7951">Node.js’s liberal contribution policy</a></li>
+</ul>
+
+<h2 id="do-i-need-governance-docs-when-i-launch-my-project">Do I need governance docs when I launch my project?</h2>
+
+<p>There is no right time to write down your project’s governance, but it’s much easier to define once you’ve seen your community dynamics play out. The best (and hardest) part about open source governance is that it is shaped by the community!</p>
+
+<p>Some early documentation will inevitably contribute to your project’s governance, however, so start writing down what you can. For example, you can define clear expectations for behavior, or how your contributor process works, even at your project’s launch.</p>
+
+<p>If you’re part of a company launching an open source project, it’s worth having an internal discussion before launch about how your company expects to maintain and make decisions about the project moving forward. You may also want to publicly explain anything particular to how your company will (or won’t!) be involved with the project.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/caabernathy?s=180" class="pquote-avatar" alt="avatar">
+  We assign small teams to manage projects on GitHub who are actually working on these at Facebook. For example, React is run by a React engineer.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/caabernathy" class="user-mention">@caabernathy</a>, <a href="https://opensource.com/life/15/10/ato-interview-christine-abernathy-facebook">“An inside look at open source at Facebook”</a>
+  </p>
+</aside>
+
+<h2 id="what-happens-if-corporate-employees-start-submitting-contributions">What happens if corporate employees start submitting contributions?</h2>
+
+<p>Successful open source projects get used by many people and companies, and some companies may eventually have revenue streams eventually tied to the project. For example, a company may use the project’s code as one component in a commercial service offering.</p>
+
+<p>As the project gets more widely used, people who have expertise in it become more in-demand - you may be one of them! - and will sometimes get paid for work they do in the project.</p>
+
+<p>It’s important to treat commercial activity as normal and as just another source of development energy. Paid developers shouldn’t get special treatment over unpaid ones, of course; each contribution must be evaluated on its technical merits. However, people should feel comfortable engaging in commercial activity, and feel comfortable stating their use cases when arguing in favor of a particular enhancement or feature.</p>
+
+<p>“Commercial” is completely compatible with “open source”. “Commercial” just means there is money involved somewhere - that the software is used in commerce, which is increasingly likely as a project gains adoption. (When open source software is used as part of a non-open-source product, the overall product is still “proprietary” software, though, like open source, it might be used for commercial or non-commercial purposes.)</p>
+
+<p>Like anyone else, commercially-motivated developers gain influence in the project through the quality and quantity of their contributions. Obviously, a developer who is paid for her time may be able to do more than someone who is not paid, but that’s okay: payment is just one of many possible factors that could affect how much someone does. Keep your project discussions focused on the contributions, not on the external factors that enable people to make those contributions.</p>
+
+<h2 id="do-i-need-a-legal-entity-to-support-my-project">Do I need a legal entity to support my project?</h2>
+
+<p>You don’t need a legal entity to support your open source project unless you’re handling money.</p>
+
+<p>For example, if you want to create a commercial business, you’ll want to set up a C Corp or LLC (if you’re based in the US). If you’re just doing contract work related to your open source project, you can accept money as a sole proprietor, or set up an LLC (if you’re based in the US).</p>
+
+<p>If you want to accept donations for your open source project, you can set up a donation button (using PayPal or Stripe, for example), but the money won’t be tax-deductible unless you are a qualifying nonprofit (a 501c3, if you’re in the US).</p>
+
+<p>Many projects don’t wish to go through the trouble of setting up a nonprofit, so they find a nonprofit fiscal sponsor instead. A fiscal sponsor accepts donations on your behalf, usually in exchange for a percentage of the donation. <a href="https://sfconservancy.org/">Software Freedom Conservancy</a>, <a href="https://www.apache.org/">Apache Foundation</a>, <a href="https://eclipse.org/org/foundation/">Eclipse Foundation</a>, <a href="https://www.linuxfoundation.org/projects">Linux Foundation</a> and <a href="https://opencollective.com/opensource">Open Collective</a> are examples of organizations that serve as fiscal sponsors for open source projects.</p>
+
+<aside class="pquote">
+  <p><img src="https://avatars.githubusercontent.com/piamancini?s=180" class="pquote-avatar" alt="avatar">
+  Our goal is to provide an infrastructure that communities can use to be self sustainable, thus creating an environment where everyone — contributors, backers, sponsors — get concrete benefits out of it.</p>
+  <p class="pquote-credit">
+— <a href="https://github.com/piamancini" class="user-mention">@piamancini</a>, <a href="https://medium.com/open-collective/moving-beyond-the-charity-framework-b1191c33141">“Moving beyond the charity framework”</a>
+  </p>
+</aside>
+
+<p>If your project is closely associated with a certain language or ecosystem, there may also be a related software foundation you can work with. For example, the <a href="https://www.python.org/psf/">Python Software Foundation</a> helps support <a href="https://pypi.org/">PyPI</a>, the Python package manager, and the <a href="https://foundation.nodejs.org/">Node.js Foundation</a> helps support <a href="https://expressjs.com/">Express.js</a>, a Node-based framework.</p>
+
+  </div>
+  <div class="text-center pb-4">
+    <a href="../index.html" style="font-size: 18px;">
+      Back to all guides
+    </a>
+  </div>
+</article>
+
+
+<div class="container-lg p-responsive mx-auto border-top text-center pt-5">
+  <h2>Related Guides</h2>
+  <div class="gutter-sm d-flex flex-wrap flex-items-stretch pb-md-6">
+
+
+    <div class="col-12 col-sm-9 mx-auto col-md-6 mt-4 mt-lg-5">
+      <a href="../best-practices/index.html" class="guide-cover best-practices Box height-full d-block">
+
+        <div class="lh-none guide-cover-img text-center pt-4">
+          <img src="../assets/images/illos/best-practices.svg" class="" alt="Best Practices for Maintainers illustration">
+        </div>
+
+        <div class="flex-self-end p-4 text-center p-lg-5">
+          <h3 class="h3-mktg text-bold lh-condensed mb-2 text-black">
+            Best Practices for Maintainers
+          </h3>
+          <div class="mb-0 text-gray">
+            <p>Making your life easier as an open source maintainer, from documenting processes to leveraging your community.</p>
+
+          </div>
+        </div>
+
+      </a>
+    </div>
+
+
+    <div class="col-12 col-sm-9 mx-auto col-md-6 mt-4 mt-lg-5">
+      <a href="../metrics/index.html" class="guide-cover metrics Box height-full d-block">
+
+        <div class="lh-none guide-cover-img text-center pt-4">
+          <img src="../assets/images/illos/metrics.svg" class="" alt="Open Source Metrics illustration">
+        </div>
+
+        <div class="flex-self-end p-4 text-center p-lg-5">
+          <h3 class="h3-mktg text-bold lh-condensed mb-2 text-black">
+            Open Source Metrics
+          </h3>
+          <div class="mb-0 text-gray">
+            <p>Make informed decisions to help your open source project thrive by measuring and tracking its success.</p>
+
+          </div>
+        </div>
+
+      </a>
+    </div>
+
+  </div>
+</div>
+
+
+
+<footer class="bg-white border-top text-center pt-5">
+  <div class="container-lg p-responsive mx-auto">
+
+    <div class="d-flex flex-wrap flex-items-stretch">
+      <div class="col-12 col-sm-6 mb-4 col-border">
+        <div class="height-full p-5">
+          <img src="../assets/images/illos/squirrel.svg" class="little-illo mb-3" alt="squirrel illustration">
+          <p class=" mb-3" style="font-weight:600;color: #196ecf; font-size:18px;"}>Contribute</p>
+          <p class="mb-3 p-large">Want to make a suggestion? This content is UHC open guides.Help us improve it.</p>
+          <p>
+            <a data-proofer-ignore href="#" class="btn btn-outline">
+              Contribute
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 mb-4">
+        <div class="height-full p-5">
+          <div id="mc_embed_signup">
+          <form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+              <img src="../assets/images/illos/bird.svg" class="little-illo mb-3" alt="bird illustration">
+              <p class=" mb-3" style="font-weight:600;color: #196ecf;font-size:18px;">Stay in touch</p>
+              <p class="mb-3 p-large">Be the first to hear about GitHub's latest UHC UHC open guides tips and resources.</p>
+
+              <div class="mc-field-group col-12">
+                  <label for="mce-EMAIL" class="d-none">Email Address</label>
+                  <input type="email" placeholder="Email Address" name="EMAIL" class="form-input required email d-block col-10 mx-auto py-2 px-3 mb-3" id="mce-EMAIL" autocomplete="home email">
+                  <input type="checkbox" value="1" name="group[9617][1]" id="mce-group[9617]-9617-0" checked="checked" style="display:none">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-outline">
+              </div>
+              <div id="mce-responses" class="clear">
+                  <div class="" id="mce-error-response" style="display:none"></div>
+                  <div class="" id="mce-success-response" style="display:none"></div>
+              </div>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9d7ced8c4bbd6c2f238673f0f_b514344ba3" tabindex="-1" value=""></div>
+              </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--  <div class="border-top text-gray py-5">
+      <p class="float-md-right"><a class="text-gray-light text-small" href="#">fine print</a></p>
+
+      <div>
+
+
+
+
+
+
+
+
+          <svg height="20" class="octicon octicon-code v-align-middle fill-gray mr-1" aria-label="code" viewBox="0 0 14 16" version="1.1" width="17" role="img"><path d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"></path></svg>
+         with
+
+          <svg height="20" class="octicon octicon-heart v-align-middle fill-gray mx-1" aria-label="love" viewBox="0 0 12 16" version="1.1" width="15" role="img"><path d="M11.2 3c-.52-.63-1.25-.95-2.2-1-.97 0-1.69.42-2.2 1-.51.58-.78.92-.8 1-.02-.08-.28-.42-.8-1-.52-.58-1.17-1-2.2-1-.95.05-1.69.38-2.2 1-.52.61-.78 1.28-.8 2 0 .52.09 1.52.67 2.67C1.25 8.82 3.01 10.61 6 13c2.98-2.39 4.77-4.17 5.34-5.33C11.91 6.51 12 5.5 12 5c-.02-.72-.28-1.39-.8-2.02V3z"></path></svg>
+         by
+          <svg height="20" class="octicon octicon-mark-github v-align-middle fill-gray mx-1" aria-label="GitHub" viewBox="0 0 16 16" version="1.1" width="20" role="img"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+         and
+
+          <a href="#" class="text-gray">friends</a>
+
+      </div>
+    </div>-->
+  </div>
+  <!-- footer area-->
+  <div class="ds-base ds-u-fill--white ds-u-margin-top--7 ds-u-padding-y--6 endfoot" role="contentinfo">
+  <div class="ds-l-container">
+    <div class="ds-l-row" style="padding-bottom:20px;">
+      <div class="ds-u-font-size--small ds-l-col--12 ds-l-sm-col--6 ds-l-md-col--6 ds-u-margin-bottom--2">
+        <div class="ds-u-float--left ds-u-margin-right--2">
+          <?xml version="1.0" encoding="UTF-8"?>
+          <img alt="" src="https://www.uhc.com/content/dam/uhcdotcom/website-assets/logo-white.svg" style="max-width: 104px; margin-bottom:15px;">
+          <!--<p style="color:#fff; font-weight:600;">#7th Floor of Tower A Unitech Cyber Park, Arya Samaj Rd, Sector 39, Gurugram, Haryana 122001, India.</p>-->
+        </div>
+      </div>
+      <div class="ds-l-col--12 ds-l-sm-col--6 ds-l-md-col--3 ds-u-margin-bottom--2">
+        <h6 class="ds-h4">Contact</h6>
+        <ul class="ds-c-list ds-c-list--bare ds-u-font-size--small">
+          <li><a href="#" style="color:#fff;">Report Suspicious Activity</a></li>
+          <li><a href="#" style="color:#fff;">Human Capital Help</a></li>
+          <li><a href="#" style="color:#fff;">Technology Help</a></li>
+          <li><a href="#" style="color:#fff;">CLL Central</a></li>
+          <!--<li><a href="https://www.healthcare.gov/">Healthcare.gov</a></li>
+          <li><a href="https://www.hhs.gov/">HHS.gov</a></li>-->
+        </ul>
+      </div>
+      <div class="ds-l-col--12 ds-l-sm-col--6 ds-l-md-col--3 ds-u-margin-bottom--2">
+        <h6 class="ds-h4">Additional resources</h6>
+        <ul class="ds-c-list ds-c-list--bare ds-u-font-size--small">
+          <li><a href="#" style="color:#fff;">Non discrimination</a></li>
+          <li><a href="#" style="color:#fff;">Freedom of Information Act</a></li>
+          <li><a href="#" style="color:#fff;">Inspector General</a></li>
+          <li><a href="#" style="color:#fff;">No Fear Act</a></li>
+          <li><a href="#" style="color:#fff;">Plain Writing</a></li>
+          <li><a href="#" style="color:#fff;">Health care fraud</a></li>
+        </ul>
+      </div>
+    </div><div style="padding-top:20px; color:#fff; font-size:11px; border-top:1px solid #b3babc;">
+  <span class="lg-display-inlineBlock mr-6">© 2020 United HealthCare Services, Inc.</span>
+
+
+  </div>
+  </div>
+</div>
+  <!--- End--->
+
+
+</footer>
+
+
+      </div>
+    </main>
+
+    <script src="../assets/js/index.js"></script>
+    <script type="text/javascript" src="../../s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+    <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+  </body>
+
+<!-- Mirrored from opensource.guide/leadership-and-governance/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 Nov 2020 12:27:53 GMT -->
+</html>
